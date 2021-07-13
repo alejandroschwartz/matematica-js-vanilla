@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calcular promedio</title>
+    </head>
+    <body>
+        <header>
+            <h1> Promedios </h1>
+            <ul>
+                <li><a href="./figuras.html">Calcular Figuras</a></li>
+                <li><a href="./descuentos.html">Calcular Descuentos</a></li>
+                <li><a href="./promedio.html">Calcular Promedio</a></li>
+                <li><a href="./mediana.html">Calcular Mediana</a></li>
+                <li><a href="./moda.html">Calcular Moda</a></li>
+            </ul>
+        </header>
+        <hr>
+        <section>
+            <form for="InputPromedio" >
+                <label >Lista de valores</label>
+                <input type="text" id="InputValores" placeholder="Ej: 15, 18, 21, 14" >
+                <button type="button" onclick="darMediaArid()" >Calcular mediana</button>
+                <h2 id="resultadoPromedio" ></h2>
+            </form>
+        </section>
+
+        <script src="./promedio.js" ></script>
+    </body>
+</html>

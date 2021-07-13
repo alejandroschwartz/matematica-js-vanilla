@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calcular descuentos</title>
+    </head>
+    <body>
+        <header>
+            <h1> Descuentos </h1>
+            <ul>
+                <li><a href="./figuras.html">Calcular Figuras</a></li>
+                <li><a href="./descuentos.html">Calcular Descuentos</a></li>
+                <li><a href="./promedio.html">Calcular Promedio</a></li>
+                <li><a href="./mediana.html">Calcular Mediana</a></li>
+                <li><a href="./moda.html">Calcular Moda</a></li>
+            </ul>
+        </header>
+        <hr>
+        <section>
+            <h1>Porcentajes y descuentos</h1>
+            <form for="traerValores" >
+
+                <label>Precio inicial</label>
+                <input type="number" id="InputPrecio" /> <br>
+
+                <label>Porcentaje descuento</label>
+                <input type="number" id="InputDescuento" /> <br>
+
+                <button type="button" onclick="traerValores()" >Calcular</button>
+                <p id="ResultadoPrecio" ></p>
+            </form>
+
+            <script src="./descuentos.js" ></script>
+        </section>
+
+            <script src="./descuentos.js" ></script>
+        </section>
+    </body>
+</html>
