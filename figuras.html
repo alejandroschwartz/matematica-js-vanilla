@@ -5,82 +5,78 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Figuras geometricas</title>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <header>
-            <h1> Figuras geométricas </h1>
-            <ul>
-                <li><a href="./figuras.html">Calcular Figuras</a></li>
-                <li><a href="./descuentos.html">Calcular Descuentos</a></li>
-                <li><a href="./promedio.html">Calcular Promedio</a></li>
-                <li><a href="./mediana.html">Calcular Mediana</a></li>
-                <li><a href="./moda.html">Calcular Moda</a></li>
+        <header class="Header">
+            <h1 class="Header__title"> Figuras geométricas </h1>
+            <ul class="Header__menu">
+                <li class="Header__menu--list"><a href="./index.html">Inicio</a></li>
+                <li class="Header__menu--list"><a href="./figuras.html">Figuras</a></li>
+                <li class="Header__menu--list"><a href="./descuentos.html">Descuentos</a></li>
+                <li class="Header__menu--list"><a href="./promedio.html">Promedio</a></li>
+                <li class="Header__menu--list"><a href="./mediana.html">Mediana</a></li>
+                <li class="Header__menu--list"><a href="./moda.html">Moda</a></li>
             </ul>
         </header>
-        <hr>
-        <section>
-            <h2>Calcula el área y perímetro de un cuadrado</h2>
-            <form for="InputCuadrado" >
-                <label>Escribe las medidas de cada lado del cuadrado</label> <br>
-                <input type="number" id="InputCuadrado" />
+
+        <section class="Form__container" >
+            <form for="InputCuadrado" class="Form" >
+                <h2>Calculá el área y perímetro de un cuadrado</h2>
+                <label>Escribe las medidas de cada lado del cuadrado</label>
+                <input type="number" id="InputCuadrado" placeholder="Lado..." />
                 <button type="button" onclick="calcularPerimetroCuadrado()" >
                     Calcular perímetro
                 </button>
                 <button type="button" onclick="calcularAreaCuadrado()" >
                     Calcular área
                 </button>
-                <p id="resCuadrado" ></p>
+                <p id="resCuadrado" class="Form__result" ></p>
             </form>
-        </section>
-        <hr>
-        <section>
-            <h2>Calcula el área y perímetro de un triangulo</h2>
-            <form for="InputTriangulo" >
-                <label>Ingresa las medidas de cada lado del triangulo</label> <br>
+
+            <form for="InputTriangulo" class="Form" >
+                <h2>Calculá el área y perímetro de un triangulo</h2>
+                <label>Ingresa las medidas de cada lado del triangulo</label>
                 <input type="number" id="InputTrianguloLado1" placeholder="Lado 1..." />
-                <input type="number" id="InputTrianguloLado2" placeholder="Lado 2..." /> <br>
+                <input type="number" id="InputTrianguloLado2" placeholder="Lado 2..." />
                 <input type="number" id="InputTrianguloBase" placeholder="Base..." />
+                <input type="number" id="InputTrianguloAltura" placeholder="Altura..." />
                 <button type="button" onclick="calcularPerimetroTriangulo()" >
                     Calcular perímetro
-                </button> <br>
-                <input type="number" id="InputTrianguloAltura" placeholder="Altura..." />
+                </button>
                 <button type="button" onclick="calcularAreaTriangulo()" >
                     Calcular área
                 </button>
-                <p id="resTriangulo" ></p>
+                <p id="resTriangulo" class="Form__result" ></p>
             </form>
-        </section>
-        <hr>
-        <section>
-            <h2>Calcula altura de un triángulo isósceles</h2>
-            <form for="InputTriangulo" >
-                <label>Ingresa las medidas de cada lado del triángulo</label> <br>
+
+            <form for="InputTriangulo" class="Form" >
+                <h2>Calculá altura de un triángulo isósceles</h2>
+                <label>Ingresa las medidas de cada lado del triángulo</label>
                 <input type="number" id="InputTrianguloIso1" placeholder="Lado 1..." />
-                <input type="number" id="InputTrianguloIso2" placeholder="Lado 2..." /> <br>
+                <input type="number" id="InputTrianguloIso2" placeholder="Lado 2..." />
                 <input type="number" id="InputTrianguloIsoBase" placeholder="Base..." />
                 <button type="button" onclick="calcularAlturaTrianguloIso()" >
                     Calcular altura
                 </button> 
-                <p id="resIsosceles" ></p>
-                <br>
+                <p id="resIsosceles" class="Form__result" ></p>
             </form>
-        </section>
-        <hr>
-        <section>
-            <h2>Calcula el área y perímetro de un circulo</h2>
-            <form for="InputCirculo" >
-                <label>Intruduce el radio del circulo</label> <br>
-                <input type="number" id="InputCirculo" />
+            
+            <form for="InputCirculo" class="Form" >
+                <h2>Calculá el área y perímetro de un circulo</h2>
+                <label>Intruduce el radio del circulo</label> 
+                <input type="number" id="InputCirculo" placeholder="Radio..." />
                 <button type="button" onclick="calcularPerimetroCirculo()" >
                     Calcular perímetro
                 </button>
                 <button type="button" onclick="calcularAreaCirculo()" >
                     Calcular área
                 </button>
-                <p id="resCirculo" ></p>
+                <p id="resCirculo" class="Form__result" ></p>
             </form>
+
         </section>
-        <hr>
+
         <script src="./figuras.js" ></script>
     </body>
 </html>

@@ -4,12 +4,12 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Calcular promedio</title>
+        <title>Calcular mediana</title>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <header class="Header">
-            <h1 class="Header__title"> Promedios </h1>
+            <h1 class="Header__title"> Calcular mediana </h1>
             <ul class="Header__menu">
                 <li class="Header__menu--list"><a href="./index.html">Inicio</a></li>
                 <li class="Header__menu--list"><a href="./figuras.html">Figuras</a></li>
@@ -19,16 +19,17 @@
                 <li class="Header__menu--list"><a href="./moda.html">Moda</a></li>
             </ul>
         </header>
+
         <section class="Form__container" >
-            <form for="InputPromedio" class="Form" >
-                <h1>Calcular promedio</h1>
-                <label >Ingresa la lista de valores</label>
+            <form for="InputMediana" class="Form" >
+                <h1>Hallar la mediana</h1>
+                <label>Ingresa los valores para hallar la mediana</label>
                 <input type="text" id="InputValores" placeholder="Ej: 15, 18, 21, 14..." >
-                <button type="button" onclick="darMediaArid()" >Calcular mediana</button>
-                <h2 id="resultadoPromedio" class="Form__result" ></h2>
+                <button type="button" onclick="calcularMediana()" >Calcular mediana</button>
+                <h2 id="resultadoMediana" class="Form__result" ></h2>
             </form>
         </section>
 
-        <script src="./promedio.js" ></script>
+        <script src="./mediana.js" ></script>
     </body>
 </html>
