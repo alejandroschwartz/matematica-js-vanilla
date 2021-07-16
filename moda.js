@@ -22,7 +22,7 @@ function crearModa(lista) {
     const moda = lista1Array[lista1Array.length - 1];
     console.log(moda);
 
-    const res = document.getElementById("resultadoModa");    
+    const res = document.getElementById("resultadoPromedio");    
     return res.innerText = `La moda es: ${moda[0]} y se repite ${moda[1]} veces.`;
 }
 

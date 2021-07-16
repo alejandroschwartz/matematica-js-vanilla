@@ -5,20 +5,25 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Calcular descuentos</title>
+        <!--   Font Awesome   -->
+        <script src="https://kit.fontawesome.com/473d269aa9.js" crossorigin="anonymous"></script>
+        <!--   Google Fonts   -->
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+        <!--   Link Style CSS   -->
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <header class="Header">
-            <h1 class="Header__title"> Calcular descuentos </h1>
+            <h1 class="Header__title">Cálculos matemáticos</h1>
             <ul class="Header__menu">
                 <li class="Header__menu--list"><a href="./index.html">Inicio</a></li>
-                <li class="Header__menu--list"><a href="./figuras.html">Figuras</a></li>
+                <li class="Header__menu--list"><a href="./figuras.html">Geometría</a></li>
                 <li class="Header__menu--list"><a href="./descuentos.html">Descuentos</a></li>
-                <li class="Header__menu--list"><a href="./promedio.html">Promedio</a></li>
-                <li class="Header__menu--list"><a href="./mediana.html">Mediana</a></li>
-                <li class="Header__menu--list"><a href="./moda.html">Moda</a></li>
+                <li class="Header__menu--list"><a href="./promedio.html">Estadística</a></li>
+                <li class="Header__menu--list"><a href="./salarios.html">Salarios</a></li>
             </ul>
         </header>
+        <h1 class="Form__container" >Calcular descuentos</h1>
         <section class="Form__container" >
             <form for="traerValores" class="Form" >
                 <h1>Porcentajes y descuentos</h1>
@@ -32,10 +37,40 @@
                 <button type="button" onclick="traerValores()" >Calcular</button>
                 <p id="ResultadoPrecio" class="Form__result" ></p>
             </form>
-
         </section>
         
-            <script src="./descuentos.js" ></script>
-        </section>
+        <footer class="Footer"> 
+            <h2>¿Creamos algo juntos?</h2>
+            <p>Contactame por los siguientes medios.</p>
+            <div class="contact__logos">
+                <div class="contact__logo--container">      
+                    <a href="https://www.linkedin.com/in/alejandro-matias-schwartz/" >
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>        
+                <div class="contact__logo--container">                   
+                    <i href="https://www.instagram.com/vectocor/" >
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+                <div class="contact__logo--container">
+                    <a href="https://github.com/alejandroschwartz" >
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+                <!-- <div class="contact__logo--container">
+                    <a href="https://www.facebook.com/alejandromatias.schwartz" >
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                </div> -->
+            </div>
+            <div class="Footer__design"> 
+                <p><small>Diseñado por:</small></p>
+                <p><strong>Alejandro Matías Schwartz</strong></p> 
+                <p>Ciudad de Córdoba - Argentina</p> 
+            </div>
+        </footer>
+
+        <script src="./descuentos.js" ></script>
     </body>
 </html>

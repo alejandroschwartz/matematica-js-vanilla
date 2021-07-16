@@ -4,83 +4,96 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Geometría y estadistica</title>
+        <title>Geometría y estadística</title>
         <!--   Font Awesome   -->
         <script src="https://kit.fontawesome.com/473d269aa9.js" crossorigin="anonymous"></script>
+        <!--   Google Fonts   -->
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
         <!--   Link Style CSS   -->
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <header class="Header">
-            <h1 class="Header__title"> Calculos geométricos y estadísticos </h1>
+            <h1 class="Header__title">Cálculos matemáticos</h1>
             <ul class="Header__menu">
                 <li class="Header__menu--list"><a href="./index.html">Inicio</a></li>
-                <li class="Header__menu--list"><a href="./figuras.html">Figuras</a></li>
+                <li class="Header__menu--list"><a href="./figuras.html">Geometría</a></li>
                 <li class="Header__menu--list"><a href="./descuentos.html">Descuentos</a></li>
-                <li class="Header__menu--list"><a href="./promedio.html">Promedio</a></li>
-                <li class="Header__menu--list"><a href="./mediana.html">Mediana</a></li>
-                <li class="Header__menu--list"><a href="./moda.html">Moda</a></li>
+                <li class="Header__menu--list"><a href="./promedio.html">Estadística</a></li>
+                <li class="Header__menu--list"><a href="./salarios.html">Salarios</a></li>
             </ul>
         </header>
-
-        <div class="Card__container" >
-
-            <div class="Card">
-                <div class="Card__img" >
-                    <i class="fas fa-shapes"></i>
+        <h1 class="Card__container" >Cálculos matemáticos, geométricos y estadísticos</h1>
+        <section class="Card__container" >
+            <a href="./figuras.html">
+                <div class="Card">
+                    <div class="Card__img" >
+                        <i class="fas fa-shapes"></i>
+                    </div>
+                    <div class="Card__detail" >
+                        <h3>Figuras geométricas</h3>
+                        <p>Podes calcular el perímetro y área de diferentes figuras geométricas planas.</p>
+                    </div>
                 </div>
-                <div class="Card__detail" >
-                    <h3>Figuras geométricas</h3>
-                    <p>Podes calcular el perimetro y area de diferentes figuras geométricas planas.</p>
-                    <a href="./figuras.html">Ir al sitio</a>
+            </a>
+
+            <a href="./descuentos.html">
+                <div class="Card">
+                    <div class="Card__img" >
+                        <i class="fas fa-cart-arrow-down"></i>
+                    </div>
+                    <div class="Card__detail" >
+                        <h3>Calcular descuentos</h3>
+                        <p>Podes calcular el descuento de un producto partiendo de el precio inicial y el porcentaje del descuento.</p>
+                    </div>
                 </div>
+            </a>
+
+            <a href="./promedio.html">
+                <div class="Card">
+                    <div class="Card__img" >
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <div class="Card__detail" >
+                        <h3>Cálculos estadísticos</h3>
+                        <p>Podras realizar calculos estadísticos como el promedio, mediana o media aridmética y la moda.</p>
+                    </div>
+                </div>
+            </a>
+        </section>
+
+        <footer class="Footer"> 
+            <h2>¿Creamos algo juntos?</h2>
+            <p>Contactame por los siguientes medios.</p>
+            <div class="contact__logos">
+                <div class="contact__logo--container">      
+                    <a href="https://www.linkedin.com/in/alejandro-matias-schwartz/" >
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>        
+                <div class="contact__logo--container">                   
+                    <a href="https://www.instagram.com/vectocor/" >
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+                <div class="contact__logo--container">
+                    <a href="https://github.com/alejandroschwartz" >
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+                <!-- <div class="contact__logo--container">
+                    <a href="https://www.facebook.com/alejandromatias.schwartz" >
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                </div> -->
             </div>
-
-            <div class="Card">
-                <div class="Card__img" >
-                    <i class="fas fa-cart-arrow-down"></i>
-                </div>
-                <div class="Card__detail" >
-                    <h3>Calcular descuentos</h3>
-                    <p>Podes calcular el descuento de un producto partiendo de el precio inicial y el porcentaje del descuento.</p>
-                    <a href="./descuentos.html">Ir al sitio</a>
-                </div>
+            <div class="Footer__design"> 
+                <p><small>Diseñado por:</small></p>
+                <p><strong>Alejandro Matías Schwartz</strong></p> 
+                <p>Ciudad de Córdoba - Argentina</p> 
             </div>
-
-            <div class="Card">
-                <div class="Card__img" >
-                    <i class="fas fa-table"></i>
-                </div>
-                <div class="Card__detail" >
-                    <h3>Calcular promedio</h3>
-                    <p>Podes calcular el perimetro y area de diferentes figuras geométricas planas.</p>
-                    <a href="./promedio.html">Ir al sitio</a>
-                </div>
-            </div>
-
-            <div class="Card">
-                <div class="Card__img" >
-                    <i class="fas fa-database"></i>
-                </div>
-                <div class="Card__detail" >
-                    <h3>Calcular mediana</h3>
-                    <p>Podes calcular el perimetro y area de diferentes figuras geométricas planas.</p>
-                    <a href="./mediana.html">Ir al sitio</a>
-                </div>
-            </div>
-
-            <div class="Card">
-                <div class="Card__img" >
-                    <i class="fas fa-calculator"></i>ssssss
-                </div>
-                <div class="Card__detail" >
-                    <h3>Calcular moda</h3>
-                    <p>Podes calcular el perimetro y area de diferentes figuras geométricas planas.</p>
-                    <a href="./moda.html">Ir al sitio</a>
-                </div>
-            </div>
-
-        </div>
+        </footer>
+        
 
         <script src="./descuentos.js" ></script>
     </body>

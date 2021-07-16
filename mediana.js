@@ -41,7 +41,7 @@ function darMediana(lista) {
     };
 
     console.log(mediana);
-    const resultado = document.getElementById("resultadoMediana");
+    const resultado = document.getElementById("resultadoPromedio");
     return resultado.innerText = `La mediana es: ${mediana}`;
 }
 

@@ -1,10 +1,3 @@
-const lista1 = [
-    100,
-    200,
-    300,
-    500,
-];
-
 function calcMediaArid(lista) {
     // let sumaLista = 0;
     // for(let i = 0; i < lista.length; i++ ) {
@@ -33,3 +26,35 @@ function darMediaArid() {
 
     calcMediaArid(arrayInput1);
 }
+
+
+// const lista1 = [
+//     100,
+//     200,
+//     300,
+//     500,
+// ];
+
+// function calcularMediaAritmetica(lista) {
+//     let sumaLista = 0;
+//     for (let i = 0; i < lista.length; i++) {
+//       sumaLista = sumaLista + lista[i];
+//     }
+  
+//     const sumaLista = lista.reduce(
+//       function (valorAcumulado = 0, nuevoElemento) {
+//         if(valorAcumulado == 0) {
+//             console.log("Si")
+//             return (1 / nuevoElemento);
+//         } else {
+//             console.log("No")
+//             return valorAcumulado + (1 / nuevoElemento);
+//         }
+//       }, 0
+//     );
+  
+//     const promedioLista = sumaLista / lista.length;
+  
+//     console.log(lista1)
+//     return promedioLista;
+// }
